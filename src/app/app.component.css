@@ -1,0 +1,38 @@
+h1 {
+  height: 200px;
+  width: 100%;
+  font-size: 64px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  vertical-align: center;
+  line-height: 190px;
+  background-image: linear-gradient(to right, #1d5995 , #23975e);
+}
+
+h2 {
+  color: #23995C;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 2%;
+}
+
+.favourite {
+  background-color: #F7FEFA;
+}
+
+.search-bar {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#search-button {
+  background-color: #23995c;
+}
+
