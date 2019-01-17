@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
 
   search() {
     let searchValue = (<HTMLInputElement>document.getElementById('search')).value;
-    console.log('searching', searchValue);
+    // console.log('searching', searchValue);
     if (searchValue) {
       for (var key in this.data) {
         if (this.data[key].keywords.toLowerCase().includes(searchValue.toLowerCase())) {
@@ -41,18 +41,18 @@ export class AppComponent implements OnInit {
     if (!this.favourites.includes(item)) {
       item.favourite = true;
       this.favourites.push(item);
-      console.log('added');
+      // console.log('added');
     }
   }
 
   removeFromFavourite(item) {
     item.favourite = false;
     this.favourites.splice(item, 1);
-    console.log('removed');
+   // console.log('removed');
   }
 
   getIconColour(item) {
-    console.log('getting colour', item);
+    // console.log('getting colour', item);
     if (item.favourite) {
       return {'color': '#2B985E'};
     }

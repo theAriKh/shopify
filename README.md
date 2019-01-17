@@ -1,27 +1,32 @@
-# ShopifyChallenge
+# Web Engineer Challenge - Summer 2019
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
+Build a web app to search for waste items using the Toronto Waste Wizard database, and save frequently used ones.
 
-## Development server
+## Instructions
+- Reproduce the design as provided in the screenshot, which displays example search results.
+- The data must be taken from the [Waste Wizard Lookup data (JSON)](https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-catalogue/#5ed40494-a290-7807-d5da-09ab6a56fca2).
+- Typing in the search field should *NOT* perform an API call.
+- A search must be performed when hitting enter or clicking the search button.
+- When the search input field is cleared, the list of results should also be cleared. 
+- Performing a search should render a list of potential matching items based on keywords. Each item should:
+   - Render the title and description of the item.
+   - Render a grey star button *if the item is not already favourited*.
+   - Render a green star icon *if the item is not already favourited*.
+   - Clicking the star button should add the item to the favourites list.
+- When the number of favourites is more than one, the app should render a list of items. Each saved item should:
+   - Render the title and description of the item.
+   - Render a green star button *if the item has been favourited*.
+   - Clicking the green star button should remove the item from the saved list.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Design
 
-## Code scaffolding
+![Design](http://cdn.shopify.com/static/web-eng-challenge-summer-2019/design.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Submission
 
-## Build
+This is my submission for the Web Engineering Intern Challenge at Shopify. This web application is built using Angular in the front-end and Node.js/ Express in the back-end. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+This application is hosted on [https://mighty-reef-84913.herokuapp.com/]
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
