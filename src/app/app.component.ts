@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   favourites = [];
 
   ngOnInit() {
-    this.http.get(process.env.PORT).subscribe((data) => {
+    this.http.get('api/get').subscribe((data) => {
       this.data = data;
     });
   }
